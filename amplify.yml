@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - echo "using a file!"
-        - npm run build
+        - ENV_VAR=$ENV_VAR npm run build
   artifacts:
     baseDirectory: build
     files:
