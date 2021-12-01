@@ -3,11 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - echo "Which Node - $(node -v)"
+        - yarn install
     build:
       commands:
-        - echo "using a file!"
-        - ENV_VAR=$ENV_VAR npm run build
+        - yarn run build
   artifacts:
     baseDirectory: build
     files:
@@ -15,4 +15,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-
