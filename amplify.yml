@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Which Node - $(node -v)"
         - yarn install
     build:
       commands:
